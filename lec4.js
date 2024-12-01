@@ -40,11 +40,6 @@ let obj7={
 //prototypical inheritance
 console.log(obj7.college);
 
-//Why it comes undefined when we try to access some property which is not present in the particular object, it should give not defined
-
-//If you dont wanna give any value then write as below
-obj2.age="";
-
 // if you wanna delete any property here then use delete keyword
 delete obj2.age;
 
@@ -98,4 +93,3 @@ let obj5 = new BankAccount("kjsjvofuohao", "Saumya", 1400000);
 console.log(obj5.deposit(500000));
 console.log(obj5.withdrawl(300000));
 console.log(obj5.checkbalance());
-
