@@ -1,7 +1,0 @@
-function onclick(){
-
-}
-
-function onchange(){
-    
-}
