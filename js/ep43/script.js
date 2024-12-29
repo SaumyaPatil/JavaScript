@@ -1,4 +1,5 @@
 //Function is a block of code that performs a specific task and avoids repetation of code.
+//We can make our code more efficient and modular using functions.
 
 //function defination
 // function sayHello(){
@@ -32,6 +33,8 @@
 //As we write function keyword we declare the function and when we write statements inside the function we define the function
 
 //function expression
+//Using const is always a better practice to be followed, to avoid debugging issues.
+//debugging - process of identifying and removing errors from code
 // let squareOfNumber = function(num){
 //     let ans = num**2;
 //     return ans;
@@ -39,7 +42,7 @@
 
 // console.log(squareOfNumber(2));
 
-//arrow function ES6 feature
+//arrow function ES6 feature - shorthand syntax
 const getExp = (x, y) => {
     return x**y;
 }

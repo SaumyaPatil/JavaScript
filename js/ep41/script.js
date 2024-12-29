@@ -26,6 +26,7 @@
 // console.log('5' == 5);  //true
 // console.log('5' === 5);  //false
 
+//explore more about it
 // console.log(5 != 3); //true
 // console.log(3 !== 3); //true
 
@@ -58,12 +59,15 @@ console.log(2 & 5); //0
 
 console.log(~(0)); //-1
 
+//XOR - same bits give 0 and different bits give 1
 console.log(2^2); //0
 
-//left shift
+//left shift - 5*(2**1)
 console.log(5<<1);
+//5*(2**2)
+console.log(5<<2); 
 
-//right shift
+//right shift - (5/2^1)
 console.log(5>>1); 
 
 //CONDITIONALS - IF ELSE/CONTROL FLOW STATEMENTS
@@ -87,4 +91,4 @@ switch(num){
     default: console.log("F");
 }
 
-//literals article in javascript
+//literals article in javascript - doc

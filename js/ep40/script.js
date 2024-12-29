@@ -24,7 +24,7 @@
 
 //Redeclaration in the same scope is not possible. Just manipulation is possible.
 // let a = 20;
-// let a =30;
+// let a = 30;
 
 //This is called dynamically typed language. 
 // let ans = 20;

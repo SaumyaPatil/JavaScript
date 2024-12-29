@@ -1,10 +1,11 @@
-//When set of instructions are repeatedly executed
+//When set of instructions are repeatedly executed - to avoid bulky, buggy and make it maintainable
 //for loop, while loop, do-while loop
+//for in, for each, for of - JS specific loops after learning arrays, objects and reference types
 
 //break : as this line hits then exit from loop
 //continue : skips the statements below and moves to next iteration
 
-//for loop can be written without the init, conditn, updation as below
+//for loop can be written without the init, conditn, updation as below - find this out, HW
 
 //This code will print i infinite times.
 /* 
@@ -65,6 +66,8 @@
     (new String()). String objects are rarely needed unless you specifically require the object-based behavior (which is uncommon).
 */
 
+//primitive data types in JS - doc
+
 //Operations on string
 //concatination
 //  let a = "Hello ";
@@ -87,7 +90,7 @@
 // console.log(str.substring(2));
 // console.log(str.substring(2, 5));
 
-//split operator splits based on something, it returns an array
+//split operator splits the string based on given char, it returns an array
 let givenString = "Hello \\jee \\kaise \\ho \\saare!";
 let words = givenString.split(' ');
 console.log(words);
@@ -95,5 +98,6 @@ console.log(words);
 // \ is used before any char to tell that not to treat that char as special char but normal char
 console.log('\\');
 console.log(words);
+//'join' function joins the array elements based on given char in the bracket.
 console.log(words.join(','));
 

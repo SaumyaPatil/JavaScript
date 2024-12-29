@@ -14,7 +14,7 @@
     <p>Namaste Dunia</p>
 
     <!-- Script tag can be added in head tag or in the beginning of body tag or in the end of it but its always an optimal practice to add 
-    it at the end of the body tag as to let the component render on screen and then add the behaviour to it. -->
+    it at the end of the body tag because theres a possibility that it would be referring to some code that is not yet rendered on screen, so it will wait and run after the thing is rendered due to which there could be a possibility that the program's behaviour is slow. So, let the component render on screen and then add the behaviour to it. -->
 
     <!-- This is inline js. But for modularity and better readablity, its a good practice to add the script inside another js file and 
     import it here. -->
