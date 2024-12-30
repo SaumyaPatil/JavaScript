@@ -12,7 +12,6 @@
 
 //tags -> tokens (by tokeniser) -> nodes -> DOM
 
-
 //window object ke andr hi sab aata hai jaise DOM, BOM, JS Core features, etc.
 
 //BOM - Interactions with browser other than HTML content like history, date time, screen size, etc. in sense of these if you wanna estb connections with browser.
