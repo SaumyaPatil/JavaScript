@@ -163,13 +163,3 @@ class Animal {
     }
 }
 
-
-/////////////////////////////////////////////11-01-2025////////////////////////////////////////////////
-//perfect resume ATS, resumeworded ATS, jobscan, resumego ATS
-//cuvette, jobsforyou, prepinsta, krishankumar linkedin, hiring hussle website
-//ambitious box - interview processes and rounds
-//testGorrilla - remote jobs
-//6 figure - salary breakdown and all
-//check resume score
-//turing - company full stack
-//stealth - company full stack
