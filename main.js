@@ -87,3 +87,34 @@ for(let i=0; i<allUsers.length; i++){
     if(allUsers[i]["gender"] == "female")console.log(allUsers[i]["firstName"]);
 }
 
+//person["name"] is same as person.name but dont write name without quotes as it will then find name variable and replace it with the string stored.
+//person[name] is passed by reference or value???????????
+
+//Q4. Write programme to reverse elements of the array
+
+//functions
+function sum(a, b){
+    return a+b;
+}
+
+console.log(sum(1, 2));
+//Functions are reusable code/scope limited logic that other people can simply call rather than writing the same logic again.
+
+
+//callback 
+function sum(num1, num2){
+    let result = num1 + num2;
+    displayResult(result);
+}
+
+function displayResult(data){
+    console.log("The result of the sum is " + data);
+}
+
+function displayResultPassive(data){
+    console.log("The sum's result is " + data);
+}
+
+//You are only allowed to call one function after this
+//How will you display result after this
+const answer = sum(1, 2);
