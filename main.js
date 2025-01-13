@@ -61,3 +61,29 @@ for(let i=1; i<givenArrayToMe.length; i++){
 
 console.log(biggestNumber);
 
+const users1 = {
+    firstName : "Saumya",
+    age : "22"
+}
+
+console.log(users1["firstName"]);
+
+//Q3.
+const allUsers = [
+{
+    firstName: "Saumya",
+    gender: "female"
+},
+{
+    firstName: "Siddhi",
+    gender: "female"
+},
+{
+    firstName: "Suraj",
+    gender: "male"
+}]
+
+for(let i=0; i<allUsers.length; i++){
+    if(allUsers[i]["gender"] == "female")console.log(allUsers[i]["firstName"]);
+}
+
