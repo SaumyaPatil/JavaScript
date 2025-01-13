@@ -41,3 +41,23 @@ if(gender == "female"){
     console.log("Heyy how are you dear boy " + givenName);
 }
 
+let personArray = ["Saumya", "Siddhi", "Parul"];
+console.log(personArray[0]);
+console.log(personArray[1]);
+console.log(personArray[2]);
+
+const ages = [21, 22, 23, 24, 25];
+const numberOfPeople = ages.length;
+for(let i=0; i<numberOfPeople; i++){
+    if(ages[i]%2 == 0)console.log(ages[i]);
+}
+
+
+const givenArrayToMe = [21, 2, 29, 872, 29];
+const biggestNumber = givenArrayToMe[0];
+for(let i=1; i<givenArrayToMe.length; i++){
+    if(givenArrayToMe[i]>biggestNumber)biggestNumber=givenArrayToMe[i];
+}
+
+console.log(biggestNumber);
+
