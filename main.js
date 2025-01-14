@@ -209,4 +209,16 @@ function sub(a, b){
     return a-b;
 }
 
+//Here the name of the function changes but body remains same.
 const value = calculateArithmetic(1, 2, arithmeticFunction);
+
+//What does single thread non blocking means -
+/* 
+    Thread is OS concept which means the code that is running is called thread.
+*/
+
+//What is non blocking -
+/* 
+    If there are async calls happening i.e. expensive network or file system call so it just differs the call and doesnt block the thread.
+*/
+
