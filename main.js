@@ -102,6 +102,29 @@ console.log(sum(1, 2));
 
 
 //callback 
+//Condition 1
+/* 
+function sum(num1, num2){
+    let result = num1 + num2;
+    return result;
+}
+
+function displayResult(data){
+    console.log("The result of the sum is " + data);
+}
+
+function displayResultPassive(data){
+    console.log("The sum's result is " + data);
+}
+
+//You are only allowed to call one function after this
+//How will you display result after this
+const answer = sum(1, 2);
+displayResult(answer);
+*/
+
+//Condition 2
+/* 
 function sum(num1, num2){
     let result = num1 + num2;
     displayResult(result);
@@ -118,3 +141,72 @@ function displayResultPassive(data){
 //You are only allowed to call one function after this
 //How will you display result after this
 const answer = sum(1, 2);
+*/
+
+//update the code base in such a way that you just have to do one function call and it will call either displayResultPassive or displayResult function as per arguements
+//Condition 3
+//Here I can simply change what function should get called and pass it as arguement and that will get called
+function sum(num1, num2, fnToCall){
+    let result = num1 + num2;
+    fnToCall(result);
+}
+
+function displayResult(data){
+    console.log("The result of the sum is " + data);
+}
+
+function displayResultPassive(data){
+    console.log("The sum's result is " + data);
+}
+
+//You are only allowed to call one function after this
+//How will you display result after this
+const answer = sum(1, 2, displayResult);
+
+//State 1
+/*
+function calculateArithmetic(a, b, type){
+    if(type == "sum"){
+        const value = sum(a, b);
+        return value;
+    }
+
+    if(type == "minus"){
+        const value = sub(a, b);
+        return value;
+    }
+}
+
+function sum(a, b){
+    return a+b;
+}
+
+function sub(a, b){
+    return a-b;
+}
+
+const value = calculateArithmetic(1, 2, "sum");
+*/
+
+//Twerk the code in such a way that you dont have to worry about
+function calculateArithmetic(a, b, arithmeticFunction){
+    if(type == "sum"){
+        const value = sum(a, b);
+        return value;
+    }
+
+    if(type == "minus"){
+        const value = sub(a, b);
+        return value;
+    }
+}
+
+function sum(a, b){
+    return a+b;
+}
+
+function sub(a, b){
+    return a-b;
+}
+
+const value = calculateArithmetic(1, 2, arithmeticFunction);
