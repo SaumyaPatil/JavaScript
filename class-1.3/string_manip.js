@@ -17,6 +17,7 @@
 
 //Number/Integers
 
+
 //parseInt() is a global function and I can simply call it anywhere in JS and it converts string to integer
 // console.log(parseInt("42"));
 // console.log(parseInt("42px"));  //here there shouldnt be gibbrish at the beginning of the string
