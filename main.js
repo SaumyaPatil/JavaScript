@@ -222,3 +222,10 @@ const value = calculateArithmetic(1, 2, arithmeticFunction);
     If there are async calls happening i.e. expensive network or file system call so it just differs the call and doesnt block the thread.
 */
 
+//We recieve response from server in form of a string which is json format. JSON is a class that has two methods parse and stringify that lets
+//use convert the recieved input to object or to send response in string format using parse method. 
+
+//Mathematical functions of Math class
+//we access it like JSON.parse() or JSON.stringify(). We can think of it as class and these as static methods of that class
+
+//Object class methods, manip over objects
