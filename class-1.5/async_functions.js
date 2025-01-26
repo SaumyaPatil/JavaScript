@@ -111,37 +111,37 @@
 //Why we introduced promise is to get rid of callbacks, cause they may cause callback hell.
 //Its like Simmy is promising Timmy that when the resolve method is called, you will get the data
 
-const fs = require('fs');
-const { resolve } = require('path');
+// const fs = require('fs');
+// const { resolve } = require('path');
 
-function kiratsReadFile(){
-    return new Promise(function(resolve){  //This is the instance of object class
-        fs.readFile("a.txt", "utf-8", function(err, data){
-            resolve(data);
-        })
-    })
-}
+// function kiratsReadFile(){
+//     return new Promise(function(resolve){  //This is the instance of object class
+//         fs.readFile("a.txt", "utf-8", function(err, data){
+//             resolve(data);
+//         })
+//     })
+// }
 
-function onDone(data){       //The promise is returned synchroniously
-    console.log(data)
-}
+// function onDone(data){       //The promise is returned synchroniously
+//     console.log(data)
+// }
 
-kiratsReadFile().then(onDone);
+// kiratsReadFile().then(onDone);
 
-//This is init a class and we have to give first arguement as function
-//pending and resolved are the two states of promises
-var d = new Promise(function(onDone){
-    setTimeout(function(){
-        resolve("foo");
-    }, 1000)
-});
+// //This is init a class and we have to give first arguement as function
+// //pending and resolved are the two states of promises
+// var d = new Promise(function(onDone){
+//     setTimeout(function(){
+//         resolve("foo");
+//     }, 1000)
+// });
 
-function callback(){
-    console.log(d);
-}
+// function callback(){
+//     console.log(d);
+// }
 
-console.log(d);
-d.then(callback);
+// console.log(d);
+// d.then(callback);
 
 //Inside the promise, theres some async logic written here.
 
@@ -157,10 +157,21 @@ function kiratsAsyncFunction(){
 }
 
 async function main(){
-    //no callbacks, no .then syntax
-    let value = kiratsAsyncFunction();
+    //no callbacks, no .then syntax and it will wait in the function and below lines of the function wont get executed
+    let value = await kiratsAsyncFunction();
     console.log("Hii there1");
     console.log(value);
 }
 
 main();
+console.log("My name is Saumya");
+for(let i=0; i<5; i++){
+    console.log(i);
+}
+
+//async await syntax needs to be there on caller side
+//await is only valid in async functions at the top level body of the modules
+
+//callbacks, async await and promises all do the same thing
+
+//In async await, theres no .then, no callbacks no nesting, so its cleaner and output is also clean. But it uses promises under the hood and promises use callbacks under the hood
