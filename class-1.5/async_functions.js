@@ -129,6 +129,7 @@ function onDone(data){       //The promise is returned synchroniously
 kiratsReadFile().then(onDone);
 
 //This is init a class and we have to give first arguement as function
+//pending and resolved are the two states of promises
 var d = new Promise(function(onDone){
     setTimeout(function(){
         resolve("foo");
@@ -142,3 +143,24 @@ function callback(){
 console.log(d);
 d.then(callback);
 
+//Inside the promise, theres some async logic written here.
+
+//async await
+function kiratsAsyncFunction(){
+    let p = new Promise(function(resolve){
+        //Do some async logic here
+        setTimeout(function(){
+            resolve("hii there!");
+        }, 3000)
+    });
+    return p;
+}
+
+async function main(){
+    //no callbacks, no .then syntax
+    let value = kiratsAsyncFunction();
+    console.log("Hii there1");
+    console.log(value);
+}
+
+main();
