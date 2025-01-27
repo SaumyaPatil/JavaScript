@@ -175,3 +175,5 @@ for(let i=0; i<5; i++){
 //callbacks, async await and promises all do the same thing
 
 //In async await, theres no .then, no callbacks no nesting, so its cleaner and output is also clean. But it uses promises under the hood and promises use callbacks under the hood
+
+//I will revise the things from tomorrow onwards.
