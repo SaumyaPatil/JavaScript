@@ -4,9 +4,10 @@
 //else we wouldnt have the access to express code locally
 
 const express = require('express')
-const app = express()
-const port = 3000
+const app = express()   //This returns something on which we write the requests below
+const port = 3000 //The server is listening on port 3000
 
+//the first arguement of get function is the route at which the request will hit the server.
 app.get('/', (req, res) => {     //This callback function will run when anyone will hit your server.
   res.send('Hello World!')
 })
